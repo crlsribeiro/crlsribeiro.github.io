@@ -19,19 +19,19 @@ I’m an Android Developer (Kotlin/Java) with a Product Management background, w
 
 ## 🚀 Featured Projects
 
-### 🥩 [MeatMetric][(https://github.com/crlsribeiro/MeatMetric))
+### 🥩 [MeatMetric](https://github.com/crlsribeiro/MeatMetric)
 **Architecture:** MVVM  
 **Description:** A barbecue meat calculator app developed with Java. Uses Room for local data persistence, Glide for image previews, and supports direct sharing via WhatsApp. Focused on delivering a practical and intuitive user experience.
 
 ---
 
-### 🎬 [ReelCine](https://github.com/carlosaoribeiro/ProjectReelCine)
+### 🎬 [ReelCine](https://github.com/crlsribeiro/ProjectReelCine)
 **Architecture:** MVVM  
 **Description:** A social movie recommendation app with group features. Integrates REST API consumption (TMDB), real-time sync with Firebase, and a custom dark theme. Built with Kotlin, emphasizing scalability and a seamless user experience.
 
 ---
 
-### 📚 [TeachTrack](https://github.com/carlosaoribeiro/TeachTrack)
+### 📚 [TeachTrack](https://github.com/crlsribeiro/TeachTrack)
 **Architecture:** MVVM  
 **Description:** An app for managing English teachers' schedules. It consumes a REST API, uses Firebase Authentication for secure sign-in, and is structured for scalability and maintainability with MVVM.
 
@@ -39,15 +39,15 @@ I’m an Android Developer (Kotlin/Java) with a Product Management background, w
 
 ## 📊 GitHub Stats
 
-![Carlos's GitHub stats](https://github-readme-stats.vercel.app/api?username=carlosaoribeiro&show_icons=true&theme=tokyonight&hide_title=true)
+![Carlos's GitHub stats](https://github-readme-stats.vercel.app/api?username=crlsribeiro&show_icons=true&theme=tokyonight&hide_title=true)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=carlosaoribeiro&layout=compact&theme=tokyonight)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=crlsribeiro&layout=compact&theme=tokyonight)
 
 ---
 
 ## 📈 Profile Visitor Counter
 
-![Visitor Badge](https://komarev.com/ghpvc/?username=carlosaoribeiro&style=flat-square&color=blue)
+![Visitor Badge](https://komarev.com/ghpvc/?username=crlsribeiro&style=flat-square&color=blue)
 
 ---
 
