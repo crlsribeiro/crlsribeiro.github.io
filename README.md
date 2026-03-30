@@ -53,7 +53,7 @@ I’m an Android Developer (Kotlin/Java) with a Product Management background, w
 
 ## 📫 Let's Connect!
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Carlos_Ribeiro-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/carlos-ribeiro-android-developer)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Carlos_Ribeiro-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/crlsribeiro-android-developer)
 [![Email](https://img.shields.io/badge/Email-crls.ribeiro.dev@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:crls.ribeiro.dev@gmail.com)
 
 ---
