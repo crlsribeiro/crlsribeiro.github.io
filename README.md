@@ -1,8 +1,11 @@
+![Banner](banner.png)
+
 # 👋 Hi, I'm Carlos Ribeiro
 
 ## 📱 Android Developer | Java | Kotlin | Flutter | MVVM | Firebase
 
 I’m an Android Developer (Kotlin/Java) with a Product Management background, working directly on mobile app development for the past 18 months. I build UI with Jetpack Compose and XML, work with MVVM architecture, and integrate REST APIs and Firebase (Auth, Firestore, push notifications/FCM). My day-to-day includes bug fixing and feature implementation. I’m experienced with automated testing (JUnit, Espresso) and manual validation, focusing on clean, well-structured code and reliable deliveries.
+
 ---
 
 ## 🛠️ Tech Stack
