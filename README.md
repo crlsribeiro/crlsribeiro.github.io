@@ -19,7 +19,7 @@ I’m an Android Developer (Kotlin/Java) with a Product Management background, w
 
 ## 🚀 Featured Projects
 
-### 🥩 [MeatMetric](https://github.com/carlosaoribeiro/MeatMetric)
+### 🥩 [MeatMetric][(https://github.com/crlsribeiro/MeatMetric))
 **Architecture:** MVVM  
 **Description:** A barbecue meat calculator app developed with Java. Uses Room for local data persistence, Glide for image previews, and supports direct sharing via WhatsApp. Focused on delivering a practical and intuitive user experience.
 
