@@ -39,9 +39,9 @@ I’m an Android Developer (Kotlin/Java) with a Product Management background, w
 
 ## 📊 GitHub Stats
 
-![Carlos's GitHub stats](https://github-readme-stats.vercel.app/api?username=crlsribeiro&show_icons=true&theme=tokyonight&hide_title=true)
+![Carlos's GitHub stats](https://github-readme-stats.vercel.app/api?username=crlsribeiro&show_icons=true&theme=tokyonight&hide_title=true&cache_seconds=1800)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=crlsribeiro&layout=compact&theme=tokyonight)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=crlsribeiro&layout=compact&theme=tokyonight&cache_seconds=1800)
 
 ---
 
