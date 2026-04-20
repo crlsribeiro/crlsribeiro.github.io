@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>ReelCine — Discover. Share. Connect.</title>
+<meta name="description" content="ReelCine is a social movie recommendation app. Discover films, share recommendations and connect with friends through private groups."/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --bg: #080810;
+    --surface: #0f0f1a;
+    --card: #13131f;
+    --violet: #7c3aed;
+    --violet-light: #a78bfa;
+    --gold: #f59e0b;
+    --text: #f1f0ff;
+    --muted: #6b6a8a;
+    --border: #1e1e2e;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; overflow-x: hidden; }
+
+  /* Nav */
+  nav { display: flex; justify-content: space-between; align-items: center; padding: 24px 48px; position: fixed; top: 0; width: 100%; z-index: 100; background: rgba(8,8,16,0.85); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
+  .logo { font-family: 'Bebas Neue', sans-serif; font-size: 28px; letter-spacing: 2px; color: var(--text); }
+  .logo span { color: var(--violet-light); }
+  nav a { color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.2s; }
+  nav a:hover { color: var(--text); }
+
+  /* Hero */
+  .hero { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 120px 24px 80px; position: relative; overflow: hidden; }
+  .hero::before { content: ''; position: absolute; top: -200px; left: 50%; transform: translateX(-50%); width: 800px; height: 800px; background: radial-gradient(circle, rgba(124,58,237,0.15) 0%, transparent 70%); pointer-events: none; }
+  .badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(124,58,237,0.15); border: 1px solid rgba(124,58,237,0.3); color: var(--violet-light); padding: 8px 20px; border-radius: 100px; font-size: 13px; font-weight: 500; margin-bottom: 32px; }
+  .badge::before { content: '🎬'; }
+  h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(72px, 12vw, 160px); line-height: 0.9; letter-spacing: 4px; margin-bottom: 24px; }
+  h1 span { color: var(--violet-light); }
+  .tagline { font-size: clamp(16px, 2.5vw, 22px); color: var(--muted); max-width: 560px; line-height: 1.6; margin-bottom: 48px; }
+  .cta-group { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+  .btn-primary { background: var(--violet); color: white; padding: 16px 36px; border-radius: 12px; font-size: 16px; font-weight: 600; text-decoration: none; transition: all 0.2s; border: none; cursor: pointer; }
+  .btn-primary:hover { background: #6d28d9; transform: translateY(-2px); }
+  .btn-secondary { background: transparent; color: var(--text); padding: 16px 36px; border-radius: 12px; font-size: 16px; font-weight: 500; text-decoration: none; border: 1px solid var(--border); transition: all 0.2s; }
+  .btn-secondary:hover { border-color: var(--violet); color: var(--violet-light); }
+
+  /* Features */
+  .section { padding: 100px 48px; max-width: 1200px; margin: 0 auto; }
+  .section-label { font-size: 12px; font-weight: 600; letter-spacing: 3px; color: var(--violet-light); text-transform: uppercase; margin-bottom: 16px; }
+  .section-title { font-family: 'Bebas Neue', sans-serif; font-size: clamp(40px, 6vw, 72px); letter-spacing: 2px; margin-bottom: 64px; }
+  .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+  .feature-card { background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 32px; transition: all 0.3s; }
+  .feature-card:hover { border-color: rgba(124,58,237,0.4); transform: translateY(-4px); }
+  .feature-icon { font-size: 36px; margin-bottom: 20px; display: block; }
+  .feature-card h3 { font-size: 20px; font-weight: 700; margin-bottom: 12px; }
+  .feature-card p { color: var(--muted); font-size: 15px; line-height: 1.6; }
+
+  /* Tech Stack */
+  .tech-section { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 80px 48px; }
+  .tech-inner { max-width: 1200px; margin: 0 auto; }
+  .tech-grid { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 40px; }
+  .tech-pill { background: var(--card); border: 1px solid var(--border); color: var(--text); padding: 10px 20px; border-radius: 100px; font-size: 14px; font-weight: 500; }
+  .tech-pill.highlight { background: rgba(124,58,237,0.15); border-color: rgba(124,58,237,0.3); color: var(--violet-light); }
+
+  /* Screenshots */
+  .screenshots { padding: 100px 48px; max-width: 1200px; margin: 0 auto; text-align: center; }
+  .screens-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin-top: 48px; }
+  .screen-mock { width: 200px; background: var(--card); border: 1px solid var(--border); border-radius: 32px; padding: 8px; flex-shrink: 0; }
+  .screen-mock .screen-inner { background: var(--surface); border-radius: 26px; height: 360px; display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 13px; overflow: hidden; }
+  .screen-mock .screen-inner img { width: 100%; height: 100%; object-fit: cover; border-radius: 26px; }
+
+  /* CTA Bottom */
+  .cta-section { padding: 100px 48px; text-align: center; position: relative; overflow: hidden; }
+  .cta-section::before { content: ''; position: absolute; bottom: -100px; left: 50%; transform: translateX(-50%); width: 600px; height: 600px; background: radial-gradient(circle, rgba(124,58,237,0.12) 0%, transparent 70%); pointer-events: none; }
+  .cta-section h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(48px, 8vw, 100px); letter-spacing: 3px; margin-bottom: 24px; }
+  .cta-section p { color: var(--muted); font-size: 18px; margin-bottom: 48px; }
+  .play-badge { display: inline-flex; align-items: center; gap: 16px; background: var(--card); border: 1px solid var(--border); padding: 16px 32px; border-radius: 16px; text-decoration: none; color: var(--text); transition: all 0.2s; }
+  .play-badge:hover { border-color: var(--violet); transform: translateY(-2px); }
+  .play-badge .play-icon { font-size: 36px; }
+  .play-badge .play-text { text-align: left; }
+  .play-badge .play-text small { display: block; font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+  .play-badge .play-text strong { display: block; font-size: 20px; font-weight: 700; }
+
+  /* Footer */
+  footer { background: var(--surface); border-top: 1px solid var(--border); padding: 48px; display: flex; justify-content: space-between; align-items: center; flex-wrap: gap; gap: 24px; }
+  .footer-logo { font-family: 'Bebas Neue', sans-serif; font-size: 24px; letter-spacing: 2px; }
+  .footer-logo span { color: var(--violet-light); }
+  footer p { color: var(--muted); font-size: 13px; }
+  footer nav { display: flex; gap: 24px; }
+  footer nav a { color: var(--muted); text-decoration: none; font-size: 13px; transition: color 0.2s; }
+  footer nav a:hover { color: var(--violet-light); }
+
+  @media (max-width: 768px) {
+    nav { padding: 20px 24px; }
+    .section, .screenshots, .cta-section { padding: 60px 24px; }
+    .tech-section { padding: 60px 24px; }
+    footer { padding: 32px 24px; flex-direction: column; text-align: center; }
+    footer nav { justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Reel<span>Cine</span></div>
+  <div style="display:flex;gap:32px;">
+    <a href="#features">Features</a>
+    <a href="#tech">Tech</a>
+    <a href="privacy-policy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="badge">Now available on Android</div>
+  <h1>REEL<span>CINE</span></h1>
+  <p class="tagline">Discover films, share recommendations and connect with friends through private groups. Your cinema, your circle.</p>
+  <div class="cta-group">
+    <a href="https://github.com/crlsribeiro/reelcine-android" class="btn-primary" target="_blank">View on GitHub</a>
+    <a href="privacy-policy.html" class="btn-secondary">Privacy Policy</a>
+  </div>
+</section>
+
+<!-- Features -->
+<section class="section" id="features">
+  <div class="section-label">What you get</div>
+  <div class="section-title">EVERYTHING YOU<br/>NEED TO DISCOVER</div>
+  <div class="features-grid">
+    <div class="feature-card">
+      <span class="feature-icon">🔐</span>
+      <h3>Secure Authentication</h3>
+      <p>Sign in with Google SSO or email/password. Your account is always protected with Firebase Authentication.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">🏠</span>
+      <h3>Curated Home Feed</h3>
+      <p>Trending today, now playing, upcoming and most popular movies — all in one beautiful dark interface.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">🔍</span>
+      <h3>Real-time Search</h3>
+      <p>Search millions of movies instantly via the TMDB API with ratings, posters and full details.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">👥</span>
+      <h3>Private Groups</h3>
+      <p>Create private circles with friends and family. Share recommendations inside your trusted group.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">📌</span>
+      <h3>Watchlist</h3>
+      <p>Save movies you want to watch later. Never forget a recommendation from a friend again.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">📢</span>
+      <h3>Community Feed</h3>
+      <p>See what everyone is recommending. Discover hidden gems from the entire ReelCine community.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Tech Stack -->
+<div class="tech-section" id="tech">
+  <div class="tech-inner">
+    <div class="section-label">Built with</div>
+    <div class="section-title" style="margin-bottom:0;">MODERN ANDROID STACK</div>
+    <div class="tech-grid">
+      <span class="tech-pill highlight">Kotlin</span>
+      <span class="tech-pill highlight">Jetpack Compose</span>
+      <span class="tech-pill highlight">Clean Architecture</span>
+      <span class="tech-pill highlight">MVVM</span>
+      <span class="tech-pill">Hilt</span>
+      <span class="tech-pill">Coroutines + Flow</span>
+      <span class="tech-pill">Firebase Auth</span>
+      <span class="tech-pill">Firebase Firestore</span>
+      <span class="tech-pill">Retrofit</span>
+      <span class="tech-pill">TMDB API</span>
+      <span class="tech-pill">Coil</span>
+      <span class="tech-pill">Navigation Compose</span>
+      <span class="tech-pill">Material 3</span>
+      <span class="tech-pill">GitHub Actions CI/CD</span>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2>READY TO<br/>WATCH DIFFERENT?</h2>
+  <p>Join the ReelCine community and never watch alone again.</p>
+  <a href="https://play.google.com/store" class="play-badge" target="_blank">
+    <span class="play-icon">▶</span>
+    <div class="play-text">
+      <small>Get it on</small>
+      <strong>Google Play</strong>
+    </div>
+  </a>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-logo">Reel<span>Cine</span></div>
+  <p>© 2025 Carlos Ribeiro. All rights reserved.</p>
+  <nav>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Use</a>
+    <a href="mailto:crls.ribeiro.dev@gmail.com">Contact</a>
+    <a href="https://github.com/crlsribeiro/reelcine-android" target="_blank">GitHub</a>
+  </nav>
+</footer>
+
+</body>
+</html>
