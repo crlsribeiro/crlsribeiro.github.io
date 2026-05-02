@@ -42,6 +42,9 @@
   .btn-secondary { background: transparent; color: var(--text); padding: 16px 36px; border-radius: 12px; font-size: 16px; font-weight: 500; text-decoration: none; border: 1px solid var(--border); transition: all 0.2s; }
   .btn-secondary:hover { border-color: var(--violet); color: var(--violet-light); }
 
+  /* Version badge */
+  .version-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(245,158,11,0.1); border: 1px solid rgba(245,158,11,0.3); color: var(--gold); padding: 4px 12px; border-radius: 100px; font-size: 11px; font-weight: 600; letter-spacing: 1px; margin-bottom: 16px; }
+
   /* Features */
   .section { padding: 100px 48px; max-width: 1200px; margin: 0 auto; }
   .section-label { font-size: 12px; font-weight: 600; letter-spacing: 3px; color: var(--violet-light); text-transform: uppercase; margin-bottom: 16px; }
@@ -49,6 +52,8 @@
   .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
   .feature-card { background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 32px; transition: all 0.3s; }
   .feature-card:hover { border-color: rgba(124,58,237,0.4); transform: translateY(-4px); }
+  .feature-card.new { border-color: rgba(245,158,11,0.3); position: relative; }
+  .feature-card.new::after { content: 'COMING SOON'; position: absolute; top: 16px; right: 16px; background: rgba(245,158,11,0.15); border: 1px solid rgba(245,158,11,0.3); color: var(--gold); padding: 3px 10px; border-radius: 100px; font-size: 10px; font-weight: 700; letter-spacing: 1px; }
   .feature-icon { font-size: 36px; margin-bottom: 20px; display: block; }
   .feature-card h3 { font-size: 20px; font-weight: 700; margin-bottom: 12px; }
   .feature-card p { color: var(--muted); font-size: 15px; line-height: 1.6; }
@@ -59,13 +64,6 @@
   .tech-grid { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 40px; }
   .tech-pill { background: var(--card); border: 1px solid var(--border); color: var(--text); padding: 10px 20px; border-radius: 100px; font-size: 14px; font-weight: 500; }
   .tech-pill.highlight { background: rgba(124,58,237,0.15); border-color: rgba(124,58,237,0.3); color: var(--violet-light); }
-
-  /* Screenshots */
-  .screenshots { padding: 100px 48px; max-width: 1200px; margin: 0 auto; text-align: center; }
-  .screens-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin-top: 48px; }
-  .screen-mock { width: 200px; background: var(--card); border: 1px solid var(--border); border-radius: 32px; padding: 8px; flex-shrink: 0; }
-  .screen-mock .screen-inner { background: var(--surface); border-radius: 26px; height: 360px; display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 13px; overflow: hidden; }
-  .screen-mock .screen-inner img { width: 100%; height: 100%; object-fit: cover; border-radius: 26px; }
 
   /* CTA Bottom */
   .cta-section { padding: 100px 48px; text-align: center; position: relative; overflow: hidden; }
@@ -80,7 +78,7 @@
   .play-badge .play-text strong { display: block; font-size: 20px; font-weight: 700; }
 
   /* Footer */
-  footer { background: var(--surface); border-top: 1px solid var(--border); padding: 48px; display: flex; justify-content: space-between; align-items: center; flex-wrap: gap; gap: 24px; }
+  footer { background: var(--surface); border-top: 1px solid var(--border); padding: 48px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
   .footer-logo { font-family: 'Bebas Neue', sans-serif; font-size: 24px; letter-spacing: 2px; }
   .footer-logo span { color: var(--violet-light); }
   footer p { color: var(--muted); font-size: 13px; }
@@ -90,7 +88,7 @@
 
   @media (max-width: 768px) {
     nav { padding: 20px 24px; }
-    .section, .screenshots, .cta-section { padding: 60px 24px; }
+    .section, .cta-section { padding: 60px 24px; }
     .tech-section { padding: 60px 24px; }
     footer { padding: 32px 24px; flex-direction: column; text-align: center; }
     footer nav { justify-content: center; }
@@ -111,12 +109,13 @@
 
 <!-- Hero -->
 <section class="hero">
-  <div class="badge">Now available on Android</div>
+  <div class="version-badge">✦ v1.0.5 — Latest Release</div>
+  <div class="badge">Now available on Google Play</div>
   <h1>REEL<span>CINE</span></h1>
   <p class="tagline">Discover films, share recommendations and connect with friends through private groups. Your cinema, your circle.</p>
   <div class="cta-group">
-    <a href="https://github.com/crlsribeiro/reelcine-android" class="btn-primary" target="_blank">View on GitHub</a>
-    <a href="privacy-policy.html" class="btn-secondary">Privacy Policy</a>
+    <a href="https://play.google.com/apps/internaltest/4700926611048584242" class="btn-primary" target="_blank">Get on Google Play</a>
+    <a href="https://github.com/crlsribeiro/reelcine-android" class="btn-secondary" target="_blank">View on GitHub</a>
   </div>
 </section>
 
@@ -155,6 +154,11 @@
       <h3>Community Feed</h3>
       <p>See what everyone is recommending. Discover hidden gems from the entire ReelCine community.</p>
     </div>
+    <div class="feature-card new">
+      <span class="feature-icon">⭐</span>
+      <h3>Favorites</h3>
+      <p>Save your all-time favorite films in a dedicated collection. Your personal hall of fame, always one tap away.</p>
+    </div>
   </div>
 </section>
 
@@ -186,7 +190,7 @@
 <section class="cta-section">
   <h2>READY TO<br/>WATCH DIFFERENT?</h2>
   <p>Join the ReelCine community and never watch alone again.</p>
-  <a href="https://play.google.com/store" class="play-badge" target="_blank">
+  <a href="https://play.google.com/apps/internaltest/4700926611048584242" class="play-badge" target="_blank">
     <span class="play-icon">▶</span>
     <div class="play-text">
       <small>Get it on</small>
@@ -198,7 +202,7 @@
 <!-- Footer -->
 <footer>
   <div class="footer-logo">Reel<span>Cine</span></div>
-  <p>© 2025 Carlos Ribeiro. All rights reserved.</p>
+  <p>© 2026 Carlos Ribeiro. All rights reserved.</p>
   <nav>
     <a href="privacy-policy.html">Privacy Policy</a>
     <a href="terms.html">Terms of Use</a>
