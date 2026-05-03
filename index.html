@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html class="dark" lang="en"><head>
+<html class="dark" lang="en">
+<head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta name="google-site-verification" content="gBey-Npn9tgh4MYNWTuRSMW67AAUaoJuOqTcDl8Pp8c" />
@@ -7,264 +8,298 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "on-error-container": "#ffd2c8",
-                    "on-surface-variant": "#ababab",
-                    "surface-container-highest": "#262626",
-                    "primary-container": "#cafd00",
-                    "tertiary": "#ff7948",
-                    "on-surface": "#ffffff",
-                    "outline-variant": "#484848",
-                    "outline": "#757575",
-                    "inverse-on-surface": "#555555",
-                    "on-tertiary-fixed": "#330a00",
-                    "secondary-dim": "#d4d4d4",
-                    "on-background": "#ffffff",
-                    "inverse-surface": "#f9f9f9",
-                    "surface-container-high": "#1f1f1f",
-                    "on-error": "#450900",
-                    "secondary": "#e2e2e2",
-                    "error-dim": "#d53d18",
-                    "surface-container-low": "#131313",
-                    "secondary-container": "#454747",
-                    "on-tertiary": "#451000",
-                    "on-tertiary-fixed-variant": "#6c1f00",
-                    "surface-tint": "#f3ffca",
-                    "tertiary-fixed": "#ff946f",
-                    "on-primary-container": "#4a5e00",
-                    "tertiary-fixed-dim": "#ff7e4f",
-                    "primary-fixed-dim": "#beee00",
-                    "on-secondary": "#505252",
-                    "primary-fixed": "#cafd00",
-                    "secondary-fixed": "#e2e2e2",
-                    "surface": "#0e0e0e",
-                    "error-container": "#b92902",
-                    "inverse-primary": "#516700",
-                    "secondary-fixed-dim": "#d4d4d4",
-                    "error": "#ff7351",
-                    "tertiary-dim": "#ff7441",
-                    "surface-dim": "#0e0e0e",
-                    "tertiary-container": "#fe5e1e",
-                    "on-tertiary-container": "#2b0700",
-                    "primary-dim": "#beee00",
-                    "surface-container": "#191919",
-                    "on-primary-fixed": "#3a4a00",
-                    "primary": "#f3ffca",
-                    "on-secondary-container": "#d0d0d0",
-                    "on-secondary-fixed-variant": "#5a5c5c",
-                    "on-primary": "#516700",
-                    "surface-bright": "#2c2c2c",
-                    "background": "#0e0e0e",
-                    "on-primary-fixed-variant": "#526900",
-                    "surface-container-lowest": "#000000",
-                    "surface-variant": "#262626",
-                    "on-secondary-fixed": "#3e4040"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0px",
-                    "lg": "0px",
-                    "xl": "0px",
-                    "full": "9999px"
-            },
-            "fontFamily": {
-                    "headline": ["Space Grotesk"],
-                    "body": ["Manrope"],
-                    "label": ["Space Grotesk"]
-            }
-          },
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-error-container": "#ffd2c8","on-surface-variant": "#ababab","surface-container-highest": "#262626",
+          "primary-container": "#cafd00","tertiary": "#ff7948","on-surface": "#ffffff","outline-variant": "#484848",
+          "outline": "#757575","inverse-on-surface": "#555555","secondary-dim": "#d4d4d4","on-background": "#ffffff",
+          "inverse-surface": "#f9f9f9","surface-container-high": "#1f1f1f","on-error": "#450900","secondary": "#e2e2e2",
+          "error-dim": "#d53d18","surface-container-low": "#131313","secondary-container": "#454747","on-tertiary": "#451000",
+          "surface-tint": "#f3ffca","tertiary-fixed": "#ff946f","on-primary-container": "#4a5e00","primary-fixed-dim": "#beee00",
+          "on-secondary": "#505252","primary-fixed": "#cafd00","secondary-fixed": "#e2e2e2","surface": "#0e0e0e",
+          "error-container": "#b92902","inverse-primary": "#516700","secondary-fixed-dim": "#d4d4d4","error": "#ff7351",
+          "surface-dim": "#0e0e0e","tertiary-container": "#fe5e1e","on-tertiary-container": "#2b0700","primary-dim": "#beee00",
+          "surface-container": "#191919","on-primary-fixed": "#3a4a00","primary": "#f3ffca","on-secondary-container": "#d0d0d0",
+          "on-primary": "#516700","surface-bright": "#2c2c2c","background": "#0e0e0e","surface-container-lowest": "#000000",
+          "surface-variant": "#262626","on-secondary-fixed": "#3e4040"
         },
+        "borderRadius": {"DEFAULT": "0px","lg": "0px","xl": "0px","full": "9999px"},
+        "fontFamily": {"headline": ["Space Grotesk"],"body": ["Manrope"],"label": ["Space Grotesk"]}
       }
-    </script>
+    }
+  }
+</script>
 <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        body {
-            background-color: #0e0e0e;
-            color: #ffffff;
-            font-family: 'Manrope', sans-serif;
-        }
-        .brutalist-text-stroke {
-            -webkit-text-stroke: 1px #cafd00;
-            color: transparent;
-        }
-    </style>
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  body { background-color: #0e0e0e; color: #ffffff; font-family: 'Manrope', sans-serif; }
+  .brutalist-text-stroke { -webkit-text-stroke: 1px #cafd00; color: transparent; }
+
+  /* Lang toggle — PT escondido por padrão */
+  .pt { display: none !important; }
+  body.lang-pt .en { display: none !important; }
+  body.lang-pt .pt { display: block !important; }
+  /* Para elementos inline (span) */
+  span.pt { display: none !important; }
+  body.lang-pt span.en { display: none !important; }
+  body.lang-pt span.pt { display: inline !important; }
+
+  /* Lang button */
+  .lang-toggle {
+    position: fixed;
+    top: 24px;
+    left: 24px;
+    z-index: 9999;
+    display: flex;
+    gap: 4px;
+    background: #131313;
+    border: 1px solid #484848;
+    padding: 6px;
+  }
+  .lang-toggle button {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 6px 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #757575;
+    background: transparent;
+    border: none;
+  }
+  .lang-toggle button.active {
+    background: #cafd00;
+    color: #0e0e0e;
+  }
+</style>
 </head>
 <body class="bg-surface selection:bg-primary-container selection:text-on-primary-container">
+
+<!-- Lang Toggle fixo no canto superior esquerdo -->
+<div class="lang-toggle">
+  <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
+  <button id="btn-pt" onclick="setLang('pt')">PT</button>
+</div>
+
+<!-- Side Nav -->
 <nav class="fixed right-0 top-0 h-full flex flex-col items-center justify-center space-y-32 py-12 z-40 bg-[#0e0e0e] w-[120px] shadow-[0_24px_48px_rgba(0,0,0,0.4)] md:flex hidden">
-<div class="text-5xl font-black text-[#cafd00] font-['Space_Grotesk'] mb-auto">CR.</div>
-<div class="flex flex-col space-y-32">
-<a class="text-[#cafd00] -rotate-90 origin-center scale-110 font-['Space_Grotesk'] text-4xl font-bold uppercase hover:bg-[#cafd00] hover:text-black transition-all" href="#work">Work</a>
-<a class="text-white/40 -rotate-90 origin-center hover:text-white font-['Space_Grotesk'] text-4xl font-bold uppercase hover:bg-[#cafd00] hover:text-black transition-all" href="#story">Story</a>
-<a class="text-white/40 -rotate-90 origin-center hover:text-white font-['Space_Grotesk'] text-4xl font-bold uppercase hover:bg-[#cafd00] hover:text-black transition-all" href="#connect">Connect</a>
-</div>
-<button class="mt-auto bg-primary-container text-on-primary-container font-['Space_Grotesk'] font-bold px-4 py-8 -rotate-90 origin-center uppercase">Let's Talk</button>
+  <div class="text-5xl font-black text-[#cafd00] font-['Space_Grotesk'] mb-auto">CR.</div>
+  <div class="flex flex-col space-y-32">
+    <a class="text-[#cafd00] -rotate-90 origin-center scale-110 font-['Space_Grotesk'] text-4xl font-bold uppercase hover:bg-[#cafd00] hover:text-black transition-all" href="#work">Work</a>
+    <a class="text-white/40 -rotate-90 origin-center hover:text-white font-['Space_Grotesk'] text-4xl font-bold uppercase hover:bg-[#cafd00] hover:text-black transition-all" href="#story">Story</a>
+    <a class="text-white/40 -rotate-90 origin-center hover:text-white font-['Space_Grotesk'] text-4xl font-bold uppercase hover:bg-[#cafd00] hover:text-black transition-all" href="#connect">Connect</a>
+  </div>
+  <button class="mt-auto bg-primary-container text-on-primary-container font-['Space_Grotesk'] font-bold px-4 py-8 -rotate-90 origin-center uppercase">
+    <span class="en">Let's Talk</span><span class="pt">Contato</span>
+  </button>
 </nav>
-<nav class="flex justify-between items-center w-full px-10 py-8 max-w-[1920px] mx-auto bg-transparent backdrop-blur-xl docked full-width top-0 z-50 md:hidden">
-<span class="text-3xl font-black tracking-tighter text-white uppercase font-['Space_Grotesk']">CARLOS RIBEIRO</span>
-<button class="text-[#cafd00]">
-<span class="material-symbols-outlined text-4xl">menu</span>
-</button>
+
+<!-- Top Nav Mobile -->
+<nav class="flex justify-between items-center w-full px-10 py-8 max-w-[1920px] mx-auto bg-transparent backdrop-blur-xl top-0 z-50 md:hidden">
+  <span class="text-3xl font-black tracking-tighter text-white uppercase font-['Space_Grotesk']">CARLOS RIBEIRO</span>
+  <button class="text-[#cafd00]"><span class="material-symbols-outlined text-4xl">menu</span></button>
 </nav>
+
 <main class="md:pr-[120px]">
+
+<!-- Hero -->
 <section class="min-h-screen flex flex-col justify-center px-6 md:px-20 py-20 relative overflow-hidden">
-<div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none select-none overflow-hidden">
-<span class="text-[25vw] font-black leading-none block brutalist-text-stroke">CARLOS</span>
-<span class="text-[25vw] font-black leading-none block brutalist-text-stroke ml-40">RIBEIRO</span>
-</div>
-<div class="relative z-10 max-w-6xl">
-<h1 class="text-6xl md:text-[10rem] font-black font-headline leading-[0.85] tracking-tighter mb-12 uppercase">
-                    CARLOS <br/> RIBEIRO
-                </h1>
-<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-<div class="md:col-span-8">
-<p class="text-2xl md:text-5xl font-medium font-body leading-tight text-on-surface">
-                            10+ years as Product Manager <span class="text-primary-container">→</span> now building the apps I always envisioned.
-                        </p>
-</div>
-<div class="md:col-span-4 flex md:justify-end">
-<div class="bg-primary-container p-1 group cursor-pointer transition-transform hover:-translate-y-2">
-<div class="bg-surface border-2 border-primary-container p-6">
-<span class="material-symbols-outlined text-primary-container text-5xl mb-4">south_east</span>
-<p class="font-headline font-bold uppercase text-xl">View Portfolio</p>
-</div>
-</div>
-</div>
-</div>
-</div>
+  <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none select-none overflow-hidden">
+    <span class="text-[25vw] font-black leading-none block brutalist-text-stroke">CARLOS</span>
+    <span class="text-[25vw] font-black leading-none block brutalist-text-stroke ml-40">RIBEIRO</span>
+  </div>
+  <div class="relative z-10 max-w-6xl">
+    <h1 class="text-6xl md:text-[10rem] font-black font-headline leading-[0.85] tracking-tighter mb-12 uppercase">CARLOS <br/> RIBEIRO</h1>
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+      <div class="md:col-span-8">
+        <p class="en text-2xl md:text-5xl font-medium font-body leading-tight text-on-surface">
+          10+ years as Product Manager <span class="text-primary-container">→</span> now building the apps I always envisioned.
+        </p>
+        <p class="pt text-2xl md:text-5xl font-medium font-body leading-tight text-on-surface">
+          10+ anos como Product Manager <span class="text-primary-container">→</span> agora construindo os apps que sempre imaginei.
+        </p>
+      </div>
+      <div class="md:col-span-4 flex md:justify-end">
+        <div class="bg-primary-container p-1 group cursor-pointer transition-transform hover:-translate-y-2">
+          <div class="bg-surface border-2 border-primary-container p-6">
+            <span class="material-symbols-outlined text-primary-container text-5xl mb-4">south_east</span>
+            <p class="en font-headline font-bold uppercase text-xl">View Portfolio</p>
+            <p class="pt font-headline font-bold uppercase text-xl">Ver Portfolio</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
+<!-- Featured -->
 <section class="py-32 px-6 md:px-20 bg-surface-container-low" id="work">
-<div class="flex flex-col md:flex-row items-end mb-20 gap-4">
-<h2 class="text-7xl md:text-9xl font-black font-headline uppercase leading-none">FEATURED</h2>
-<div class="h-1 w-full bg-primary-container mb-4 hidden md:block"></div>
-</div>
-<div class="relative grid grid-cols-1 md:grid-cols-12 gap-0">
-<div class="md:col-span-10 md:col-start-1 aspect-video bg-surface-container-high overflow-hidden">
-<img alt="The Closet Select Interface" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTGP-qLHL5sGg9hw_f9iXOOFWgUDms4fdrnX8ttCuH2GSy5NgtgxhiOVmVfge5u2l0ECEv_pbbSwG1jEXBD2f1kJXdGdyJIb3fnlWM6grbO5tirHnLTO9V6EQsw7tZEPSOapW943JwGxmDfzDpGIDwA4OO6zhmo-yKdPpUrSDg77DJf1PTL9tXsLqBHDDWLUG257zfHKStef4sGFKSBqTdFxKkd54NO5SOC018puxxmvadanIqBz-ZqHrd46141Hg2CwiwbUQ9DBWM"/>
-</div>
-<div class="md:col-span-6 md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2 bg-surface p-12 border-l-8 border-primary-container z-20 shadow-2xl mt-[-40px] md:mt-0">
-<span class="inline-block px-4 py-1 bg-secondary-container text-on-secondary-container font-label uppercase text-sm mb-6">Product &amp; Dev</span>
-<h3 class="text-5xl md:text-7xl font-black font-headline uppercase mb-6 leading-none">The Closet Select</h3>
-<p class="text-xl text-on-surface-variant mb-8 font-body max-w-md">
-                        AI-powered outfit recommender for Android. Combines personal wardrobe, real-time weather and Google Gemini 2.5 Flash to generate highly personalized outfit suggestions.
-                    </p>
-<a class="inline-flex items-center gap-4 text-primary-container font-headline font-black text-2xl uppercase group" href="https://github.com/crlsribeiro/the-closet-select" target="_blank">
-                        Live Case Study
-                        <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
-</a>
-</div>
-<div class="absolute -left-10 top-20 hidden md:block rotate-90 origin-left">
-<span class="text-surface-container-highest text-8xl font-black font-headline select-none">ARCHITECTURE</span>
-</div>
-</div>
+  <div class="flex flex-col md:flex-row items-end mb-20 gap-4">
+    <h2 class="text-7xl md:text-9xl font-black font-headline uppercase leading-none">
+      <span class="en">FEATURED</span><span class="pt">DESTAQUE</span>
+    </h2>
+    <div class="h-1 w-full bg-primary-container mb-4 hidden md:block"></div>
+  </div>
+  <div class="relative grid grid-cols-1 md:grid-cols-12 gap-0">
+    <div class="md:col-span-10 md:col-start-1 aspect-video bg-surface-container-high overflow-hidden">
+      <img alt="The Closet Select Interface" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTGP-qLHL5sGg9hw_f9iXOOFWgUDms4fdrnX8ttCuH2GSy5NgtgxhiOVmVfge5u2l0ECEv_pbbSwG1jEXBD2f1kJXdGdyJIb3fnlWM6grbO5tirHnLTO9V6EQsw7tZEPSOapW943JwGxmDfzDpGIDwA4OO6zhmo-yKdPpUrSDg77DJf1PTL9tXsLqBHDDWLUG257zfHKStef4sGFKSBqTdFxKkd54NO5SOC018puxxmvadanIqBz-ZqHrd46141Hg2CwiwbUQ9DBWM"/>
+    </div>
+    <div class="md:col-span-6 md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2 bg-surface p-12 border-l-8 border-primary-container z-20 shadow-2xl mt-[-40px] md:mt-0">
+      <span class="inline-block px-4 py-1 bg-secondary-container text-on-secondary-container font-label uppercase text-sm mb-6">Product &amp; Dev</span>
+      <h3 class="text-5xl md:text-7xl font-black font-headline uppercase mb-6 leading-none">The Closet Select</h3>
+      <p class="en text-xl text-on-surface-variant mb-8 font-body max-w-md">AI-powered outfit recommender for Android. Combines personal wardrobe, real-time weather and Google Gemini 2.5 Flash to generate highly personalized outfit suggestions.</p>
+      <p class="pt text-xl text-on-surface-variant mb-8 font-body max-w-md">Recomendador de outfits com IA para Android. Combina guarda-roupa pessoal, clima em tempo real e Google Gemini 2.5 Flash para sugestões altamente personalizadas.</p>
+      <a class="inline-flex items-center gap-4 text-primary-container font-headline font-black text-2xl uppercase group" href="https://github.com/crlsribeiro/the-closet-select" target="_blank">
+        <span class="en">Live Case Study</span><span class="pt">Ver Projeto</span>
+        <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+      </a>
+    </div>
+    <div class="absolute -left-10 top-20 hidden md:block rotate-90 origin-left">
+      <span class="text-surface-container-highest text-8xl font-black font-headline select-none">ARCHITECTURE</span>
+    </div>
+  </div>
 </section>
+
+<!-- Other Projects -->
 <section class="py-40 px-6 md:px-20">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-20 md:gap-12">
-<!-- ReelCine -->
-<div class="relative group">
-<div class="bg-surface-container-high aspect-[3/4] mb-8 overflow-hidden">
-<img alt="ReelCine App" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBorvoQZRL2DzyGqStKRf1nG89wKaVH-TiVqnzDkjyq7tLUx9e4WOhm_X8E5Y9gwwhbeWCevADxfMnb7u9lIWd8fw-zZ9AY4gcPcYIIobMZRCacsWHbblHlJg4Qhxhb_oQhn77-5y5tAQSAoDBd_FK6fOiWXeqVURR7DErZN3kjwkS4fjYK2rMASYmFdjpO4BXO94PGp4pQXzKt7MMMVPtwSjaZJPmQyqjRBrKvWS5mDc4Hg7qfHSiaR1fCpeXzi3w9PmcEpf0xtWXt"/>
-</div>
-<div class="absolute -top-6 -right-6 bg-tertiary p-4 z-10">
-<span class="material-symbols-outlined text-on-tertiary text-3xl">movie</span>
-</div>
-<a href="/reelcine/" target="_blank"><h4 class="text-4xl font-black font-headline uppercase mb-2 hover:text-primary-container transition-colors">ReelCine</h4></a>
-<p class="text-on-surface-variant font-body">Social movie recommendation app with group features, real-time Firebase sync and custom dark theme. Kotlin · MVVM · TMDB API.</p>
-</div>
-<!-- TeachTrack -->
-<div class="relative group mt-0 md:mt-32">
-<div class="bg-surface-container-high aspect-[3/4] mb-8 overflow-hidden">
-<img alt="TeachTrack Dashboard" class="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGi3RbHUUrdrRxug4nh5zMQ8IJkC2J0231uBs79lpQo1fw-fQlGQua9K_4wWI3cFfmHYJPe7WIe-XQk7WfHapqwBexJ-llLJBJ_6_r4BcTrvyM-R1P7vk87DSqw2s3357G68njh2XD8ubumkfEWX17ZuFzqDcJDt3gyAc00aJF81OdNwIX-c-40WHWxm1hgpTyohiunDNoJJMoEy0Ii9U9A8yZSbtOAzd5SEmYiDNGuvB96cLvpfh261iFca1f4s1gUfGkXA3mHOYS"/>
-</div>
-<div class="absolute -top-6 -left-6 bg-primary-container p-4 z-10">
-<span class="material-symbols-outlined text-on-primary-container text-3xl">school</span>
-</div>
-<a href="https://github.com/carlosaoribeiro/TeachTrack" target="_blank"><h4 class="text-4xl font-black font-headline uppercase mb-2 hover:text-primary-container transition-colors">TeachTrack</h4></a>
-<p class="text-on-surface-variant font-body">Schedule management for English teachers with Firebase authentication and scalable MVVM architecture.</p>
-</div>
-<!-- MeatMetric -->
-<div class="relative group mt-0 md:mt-16">
-<div class="bg-surface-container-high aspect-[3/4] mb-8 overflow-hidden">
-<img alt="MeatMetric Analytics" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKpjWjalsSv44RjW7jsVAMpZzw3zXkEBIGMUyfzyFyUhVpgcaWByH2B-G7nH-0W5WxQ-Rcraxb3Yf5wbOxi1YZE1iHZFPzw1vIQard_uXZ9dS5tQQY7Dt-kJJSYw71xzwrYkb7aHVglmdENyNS5SqsyrEzTdJDUg5OqO_WhYWT5apUmiJ9NnNHAdDt5_68Hu2gQPOIiuRjjBH7NANLpSomjP19wRbsPyEiYjs_64Pas0I6ncUUm0ou8jOseUKec9Fq-Dd08VS8Sjz_"/>
-</div>
-<div class="absolute -bottom-6 -right-6 bg-tertiary p-4 z-10">
-<span class="material-symbols-outlined text-on-tertiary text-3xl">analytics</span>
-</div>
-<a href="https://github.com/carlosaoribeiro/MeatMetric" target="_blank"><h4 class="text-4xl font-black font-headline uppercase mb-2 hover:text-primary-container transition-colors">MeatMetric</h4></a>
-<p class="text-on-surface-variant font-body">Barbecue meat calculator with Room DB persistence, image previews via Glide and WhatsApp sharing. Java · MVVM.</p>
-</div>
-</div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-20 md:gap-12">
+    <!-- ReelCine -->
+    <div class="relative group">
+      <div class="bg-surface-container-high aspect-[3/4] mb-8 overflow-hidden">
+        <img alt="ReelCine App" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="reelcine-screenshot.png"/>
+      </div>
+      <div class="absolute -top-6 -right-6 bg-tertiary p-4 z-10">
+        <span class="material-symbols-outlined text-on-tertiary text-3xl">movie</span>
+      </div>
+      <a href="/reelcine/" target="_blank"><h4 class="text-4xl font-black font-headline uppercase mb-2 hover:text-primary-container transition-colors">ReelCine</h4></a>
+      <p class="en text-on-surface-variant font-body">Social movie recommendation app with group features, real-time Firebase sync and custom dark theme. Kotlin · MVVM · TMDB API.</p>
+      <p class="pt text-on-surface-variant font-body">App social de recomendação de filmes com grupos privados, sincronização Firebase em tempo real e tema escuro. Kotlin · MVVM · TMDB API.</p>
+    </div>
+    <!-- TeachTrack -->
+    <div class="relative group mt-0 md:mt-32">
+      <div class="bg-surface-container-high aspect-[3/4] mb-8 overflow-hidden">
+        <img alt="TeachTrack Dashboard" class="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGi3RbHUUrdrRxug4nh5zMQ8IJkC2J0231uBs79lpQo1fw-fQlGQua9K_4wWI3cFfmHYJPe7WIe-XQk7WfHapqwBexJ-llLJBJ_6_r4BcTrvyM-R1P7vk87DSqw2s3357G68njh2XD8ubumkfEWX17ZuFzqDcJDt3gyAc00aJF81OdNwIX-c-40WHWxm1hgpTyohiunDNoJJMoEy0Ii9U9A8yZSbtOAzd5SEmYiDNGuvB96cLvpfh261iFca1f4s1gUfGkXA3mHOYS"/>
+      </div>
+      <div class="absolute -top-6 -left-6 bg-primary-container p-4 z-10">
+        <span class="material-symbols-outlined text-on-primary-container text-3xl">school</span>
+      </div>
+      <a href="https://github.com/carlosaoribeiro/TeachTrack" target="_blank"><h4 class="text-4xl font-black font-headline uppercase mb-2 hover:text-primary-container transition-colors">TeachTrack</h4></a>
+      <p class="en text-on-surface-variant font-body">Schedule management for English teachers with Firebase authentication and scalable MVVM architecture.</p>
+      <p class="pt text-on-surface-variant font-body">Gerenciamento de agenda para professores de inglês com autenticação Firebase e arquitetura MVVM escalável.</p>
+    </div>
+    <!-- MeatMetric -->
+    <div class="relative group mt-0 md:mt-16">
+      <div class="bg-surface-container-high aspect-[3/4] mb-8 overflow-hidden flex items-center justify-center">
+        <span class="text-8xl font-black font-headline text-surface-container-highest select-none">🥩</span>
+      </div>
+      <div class="absolute -bottom-6 -right-6 bg-tertiary p-4 z-10">
+        <span class="material-symbols-outlined text-on-tertiary text-3xl">analytics</span>
+      </div>
+      <a href="https://github.com/carlosaoribeiro/MeatMetric" target="_blank"><h4 class="text-4xl font-black font-headline uppercase mb-2 hover:text-primary-container transition-colors">MeatMetric</h4></a>
+      <p class="en text-on-surface-variant font-body">Barbecue meat calculator with Room DB persistence, image previews via Glide and WhatsApp sharing. Java · MVVM.</p>
+      <p class="pt text-on-surface-variant font-body">Calculadora de churrasco com persistência Room DB, previews de imagem via Glide e compartilhamento via WhatsApp. Java · MVVM.</p>
+    </div>
+  </div>
 </section>
-<!-- About: PM-to-Dev Story -->
+
+<!-- Story -->
 <section class="py-40 px-6 md:px-20 bg-surface" id="story">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-<div class="md:col-span-5 relative">
-<div class="bg-surface-container-high border-2 border-primary-container p-2">
-<img alt="Carlos Ribeiro Portrait" class="w-full h-auto object-cover" src="CarlosRibeiro.png"/>
-</div>
-<div class="absolute -bottom-10 -right-10 bg-primary-container p-8 hidden md:block">
-<p class="font-headline font-black text-on-primary-container text-4xl leading-none">10+<br/>YEARS</p>
-</div>
-</div>
-<div class="md:col-span-7">
-<h2 class="text-6xl md:text-8xl font-black font-headline uppercase mb-10 leading-none">THE SHIFT</h2>
-<div class="space-y-8 max-w-2xl">
-<p class="text-3xl font-medium font-body leading-relaxed">
-                            I spent a decade defining <span class="bg-primary-container text-on-primary-container px-2">"The What"</span> and <span class="bg-primary-container text-on-primary-container px-2">"The Why"</span> for multi-million dollar products.
-                        </p>
-<p class="text-xl text-on-surface-variant leading-relaxed">
-                            Now, I'm defining "The How." My transition from Senior Product Manager to Full-Stack Developer wasn't about changing careers—it was about completing the circle. I build with the precision of an engineer and the vision of a product owner. No fluff, just high-performance solutions that break grids and solve real problems.
-                        </p>
-<div class="flex flex-wrap gap-4">
-<span class="px-6 py-2 border border-outline font-label uppercase text-sm">Product Strategy</span>
-<span class="px-6 py-2 border border-outline font-label uppercase text-sm">Full-Stack Dev</span>
-<span class="px-6 py-2 border border-outline font-label uppercase text-sm">Technical UX</span>
-<span class="px-6 py-2 border border-outline font-label uppercase text-sm">System Architecture</span>
-</div>
-</div>
-</div>
-</div>
+  <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+    <div class="md:col-span-5 relative">
+      <div class="bg-surface-container-high border-2 border-primary-container p-2">
+        <img alt="Carlos Ribeiro Editorial Portrait" class="w-full h-auto object-cover grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmd4qae52DaDJ7m0qhPsRR93OsH96PX3-aT_EdSwgjJPpBI46Wskt4DD-z-HWIY8ngiM4wl81eh3pSPOmQL8U7FjUe7RACgt4VGPpG_TjbkBgfgkXfpxfJNcJrdxrviLF6Wdom39HZMirjftDcfmV59M8W937wNAikOFVcRRPHlp_MD_TnCIIdGwG1IVh7wzR_dMkUUo2hJtRqy_EDlpjIy8YIrzeDRqBGVr5IvJdOQd3rLCOYoyfvOU-KE1xUY4VFIz6iC04Oyfiv"/>
+      </div>
+      <div class="absolute -bottom-10 -right-10 bg-primary-container p-8 hidden md:block">
+        <p class="font-headline font-black text-on-primary-container text-4xl leading-none">10+<br/>YEARS</p>
+      </div>
+    </div>
+    <div class="md:col-span-7">
+      <h2 class="text-6xl md:text-8xl font-black font-headline uppercase mb-10 leading-none">THE SHIFT</h2>
+      <div class="space-y-8 max-w-2xl">
+        <p class="en text-3xl font-medium font-body leading-relaxed">
+          I spent a decade defining <span class="bg-primary-container text-on-primary-container px-2">"The What"</span> and <span class="bg-primary-container text-on-primary-container px-2">"The Why"</span> for multi-million dollar products.
+        </p>
+        <p class="pt text-3xl font-medium font-body leading-relaxed">
+          Passei uma década definindo <span class="bg-primary-container text-on-primary-container px-2">"O Quê"</span> e <span class="bg-primary-container text-on-primary-container px-2">"O Porquê"</span> de produtos multimilionários.
+        </p>
+        <p class="en text-xl text-on-surface-variant leading-relaxed">
+          Now, I'm defining "The How." My transition from Senior Product Manager to Android Developer wasn't about changing careers—it was about completing the circle. I build with the precision of an engineer and the vision of a product owner. No fluff, just high-performance Android apps that break grids and solve real problems.
+        </p>
+        <p class="pt text-xl text-on-surface-variant leading-relaxed">
+          Agora, estou definindo "O Como." Minha transição de Senior Product Manager para Android Developer não foi uma mudança de carreira — foi completar o ciclo. Construo com a precisão de um engenheiro e a visão de um dono de produto. Sem enrolação, apenas apps Android de alta performance que resolvem problemas reais.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <span class="px-6 py-2 border border-outline font-label uppercase text-sm">Product Strategy</span>
+          <span class="px-6 py-2 border border-outline font-label uppercase text-sm">Android Dev</span>
+          <span class="px-6 py-2 border border-outline font-label uppercase text-sm">Technical UX</span>
+          <span class="px-6 py-2 border border-outline font-label uppercase text-sm">System Architecture</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- Contact Section -->
+
+<!-- Contact -->
 <section class="py-40 px-6 md:px-20 bg-surface-container-low relative overflow-hidden" id="connect">
-<div class="max-w-4xl">
-<h2 class="text-5xl md:text-8xl font-black font-headline uppercase mb-20 leading-none">READY TO <br/> <span class="text-primary-container">BUILD DIFFERENT?</span></h2>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
-<div class="space-y-12">
-<a class="block group" href="mailto:crls.ribeiro.dev@gmail.com">
-<span class="text-sm font-label uppercase text-outline mb-2 block">Direct Line</span>
-<span class="text-3xl md:text-5xl font-black font-headline uppercase group-hover:text-primary-container transition-colors">crls.ribeiro.dev@gmail.com</span>
-</a>
-<div class="flex gap-10">
-<a class="text-2xl font-headline font-bold uppercase hover:text-tertiary transition-colors" href="https://www.linkedin.com/in/crlsribeiro-android-developer/?locale=en-US" target="_blank">LinkedIn</a>
-<a class="text-2xl font-headline font-bold uppercase hover:text-tertiary transition-colors" href="https://github.com/crlsribeiro" target="_blank">GitHub</a>
-</div>
-</div>
-<div class="bg-surface-container-high p-8 flex flex-col justify-between group cursor-pointer border-t-4 border-primary-container">
-<p class="text-xl font-body mb-8">Currently available for select freelance engineering and product advisory roles.</p>
-<a href="mailto:crls.ribeiro.dev@gmail.com" class="bg-primary-container text-on-primary-container py-4 px-8 font-headline font-black uppercase text-xl flex items-center justify-between group-hover:translate-y-[-4px] group-hover:translate-x-[4px] transition-transform no-underline">
-                            Hire Carlos
-                            <span class="material-symbols-outlined">bolt</span>
-</a>
-</div>
-</div>
-</div>
+  <div class="max-w-4xl">
+    <h2 class="text-5xl md:text-8xl font-black font-headline uppercase mb-20 leading-none">
+      <span class="en">READY TO <br/> <span class="text-primary-container">BUILD DIFFERENT?</span></span>
+      <span class="pt">PRONTO PARA <br/> <span class="text-primary-container">CONSTRUIR DIFERENTE?</span></span>
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+      <div class="space-y-12">
+        <a class="block group" href="mailto:crls.ribeiro.dev@gmail.com">
+          <span class="en text-sm font-label uppercase text-outline mb-2 block">Direct Line</span>
+          <span class="pt text-sm font-label uppercase text-outline mb-2 block">Contato Direto</span>
+          <span class="text-3xl md:text-5xl font-black font-headline uppercase group-hover:text-primary-container transition-colors">crls.ribeiro.dev@gmail.com</span>
+        </a>
+        <div class="flex gap-10">
+          <a class="text-2xl font-headline font-bold uppercase hover:text-tertiary transition-colors" href="https://www.linkedin.com/in/crlsribeiro-android-developer/?locale=en-US" target="_blank">LinkedIn</a>
+          <a class="text-2xl font-headline font-bold uppercase hover:text-tertiary transition-colors" href="https://github.com/crlsribeiro" target="_blank">GitHub</a>
+        </div>
+      </div>
+      <div class="bg-surface-container-high p-8 flex flex-col justify-between group cursor-pointer border-t-4 border-primary-container">
+        <p class="en text-xl font-body mb-8">Currently available for select freelance engineering and product advisory roles.</p>
+        <p class="pt text-xl font-body mb-8">Disponível para projetos freelance de engenharia e consultoria de produto.</p>
+        <a href="mailto:crls.ribeiro.dev@gmail.com" class="bg-primary-container text-on-primary-container py-4 px-8 font-headline font-black uppercase text-xl flex items-center justify-between group-hover:translate-y-[-4px] group-hover:translate-x-[4px] transition-transform no-underline">
+          <span class="en">Hire Carlos</span><span class="pt">Contratar Carlos</span>
+          <span class="material-symbols-outlined">bolt</span>
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
+
 <!-- Footer -->
-<footer class="w-full px-10 py-20 mt-40 flex flex-col md:flex-row justify-between items-end border-t-0 bg-[#131313] relative overflow-hidden">
-<span class="text-9xl font-black opacity-10 absolute -bottom-10 -left-10 select-none font-['Space_Grotesk'] text-[#f3ffca]">CR.</span>
-<div class="z-10 text-left mb-12 md:mb-0">
-<p class="font-['Manrope'] text-sm tracking-widest uppercase text-white/60">©2026 Carlos Ribeiro. Built to break grids.</p>
-</div>
-<div class="flex gap-12 z-10 font-['Manrope'] text-sm tracking-widest uppercase">
-<a class="text-white/60 hover:text-[#ff7948] transition-colors duration-300" href="https://github.com/crlsribeiro" target="_blank">GitHub</a>
-<a class="text-white/60 hover:text-[#ff7948] transition-colors duration-300" href="https://www.linkedin.com/in/crlsribeiro-android-developer/?locale=en-US" target="_blank">LinkedIn</a>
-</div>
+<footer class="w-full px-10 py-20 mt-40 flex flex-col md:flex-row justify-between items-end bg-[#131313] relative overflow-hidden">
+  <span class="text-9xl font-black opacity-10 absolute -bottom-10 -left-10 select-none font-['Space_Grotesk'] text-[#f3ffca]">CR.</span>
+  <div class="z-10 text-left mb-12 md:mb-0">
+    <p class="en font-['Manrope'] text-sm tracking-widest uppercase text-white/60">©2026 Carlos Ribeiro. Built to break grids.</p>
+    <p class="pt font-['Manrope'] text-sm tracking-widest uppercase text-white/60">©2026 Carlos Ribeiro. Feito para quebrar padrões.</p>
+  </div>
+  <div class="flex gap-12 z-10 font-['Manrope'] text-sm tracking-widest uppercase">
+    <a class="text-white/60 hover:text-[#ff7948] transition-colors duration-300" href="https://github.com/crlsribeiro" target="_blank">GitHub</a>
+    <a class="text-white/60 hover:text-[#ff7948] transition-colors duration-300" href="https://www.linkedin.com/in/crlsribeiro-android-developer/?locale=en-US" target="_blank">LinkedIn</a>
+  </div>
 </footer>
+
 </main>
+
+<script>
+  function setLang(lang) {
+    if (lang === 'pt') {
+      document.body.classList.add('lang-pt');
+      document.getElementById('btn-pt').classList.add('active');
+      document.getElementById('btn-en').classList.remove('active');
+    } else {
+      document.body.classList.remove('lang-pt');
+      document.getElementById('btn-en').classList.add('active');
+      document.getElementById('btn-pt').classList.remove('active');
+    }
+  }
+</script>
 </body>
 </html>
