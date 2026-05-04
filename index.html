@@ -165,32 +165,58 @@
 
 <!-- Other Projects -->
 <section class="py-40 px-6 md:px-20">
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-20 md:gap-12">
-    <!-- ReelCine -->
-    <div class="relative group">
-      <div class="bg-surface-container-high aspect-[3/4] mb-8 overflow-hidden">
-        <img alt="ReelCine App" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="reelcine-screenshot.png"/>
+  <div class="flex flex-col md:flex-row items-end mb-16 gap-4">
+    <h2 class="text-7xl md:text-9xl font-black font-headline uppercase leading-none">
+      <span class="en">PROJECTS</span><span class="pt">PROJETOS</span>
+    </h2>
+    <div class="h-1 w-full bg-primary-container mb-4 hidden md:block"></div>
+  </div>
+
+  <!-- ReelCine -->
+  <div class="grid grid-cols-1 md:grid-cols-2 border border-surface-variant mb-0">
+    <div class="bg-surface-container-high overflow-hidden min-h-[320px] flex items-center justify-center relative">
+      <img alt="ReelCine App" class="w-full h-full object-cover absolute inset-0" src="reelcine-screenshot.png" onerror="this.style.display='none'"/>
+      <div class="text-center z-10 p-8">
+        <span class="material-symbols-outlined text-muted text-6xl">movie</span>
       </div>
-      <div class="absolute -top-6 -right-6 bg-tertiary p-4 z-10">
-        <span class="material-symbols-outlined text-on-tertiary text-3xl">movie</span>
-      </div>
-      <a href="/reelcine/" target="_blank"><h4 class="text-4xl font-black font-headline uppercase mb-2 hover:text-primary-container transition-colors">ReelCine</h4></a>
-      <p class="en text-on-surface-variant font-body">Social movie recommendation app with group features, real-time Firebase sync and custom dark theme. Kotlin · MVVM · TMDB API.</p>
-      <p class="pt text-on-surface-variant font-body">App social de recomendação de filmes com grupos privados, sincronização Firebase em tempo real e tema escuro. Kotlin · MVVM · TMDB API.</p>
     </div>
-    <!-- TeachTrack -->
-    <div class="relative group mt-0 md:mt-32">
-      <div class="bg-surface-container-high aspect-[3/4] mb-8 overflow-hidden">
-        <img alt="TeachTrack Dashboard" class="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGi3RbHUUrdrRxug4nh5zMQ8IJkC2J0231uBs79lpQo1fw-fQlGQua9K_4wWI3cFfmHYJPe7WIe-XQk7WfHapqwBexJ-llLJBJ_6_r4BcTrvyM-R1P7vk87DSqw2s3357G68njh2XD8ubumkfEWX17ZuFzqDcJDt3gyAc00aJF81OdNwIX-c-40WHWxm1hgpTyohiunDNoJJMoEy0Ii9U9A8yZSbtOAzd5SEmYiDNGuvB96cLvpfh261iFca1f4s1gUfGkXA3mHOYS"/>
+    <div class="p-10 flex flex-col justify-between bg-surface-container-low">
+      <div>
+        <span class="inline-block px-4 py-1 bg-[rgba(124,58,237,0.15)] border border-[rgba(124,58,237,0.3)] text-violet-light font-label uppercase text-xs tracking-widest mb-6" style="color:#a78bfa;">Android · Kotlin</span>
+        <h3 class="text-5xl font-black font-headline uppercase mb-4 leading-none">ReelCine</h3>
+        <p class="en text-on-surface-variant font-body text-base leading-relaxed mb-8">Social movie recommendation app with private groups, real-time Firebase sync and custom dark theme. MVVM · TMDB API.</p>
+        <p class="pt text-on-surface-variant font-body text-base leading-relaxed mb-8">App social de recomendação de filmes com grupos privados, sincronização Firebase em tempo real e tema escuro. MVVM · TMDB API.</p>
       </div>
-      <div class="absolute -top-6 -left-6 bg-primary-container p-4 z-10">
-        <span class="material-symbols-outlined text-on-primary-container text-3xl">school</span>
+      <div class="flex gap-4">
+        <a href="/reelcine/" target="_blank" class="bg-violet text-white px-6 py-3 font-headline font-bold uppercase text-sm tracking-widest hover:bg-[#6d28d9] transition-colors" style="background:#7c3aed; text-decoration:none;">
+          <span class="en">View App →</span><span class="pt">Ver App →</span>
+        </a>
+        <a href="https://github.com/crlsribeiro/reelcine-android" target="_blank" class="border border-surface-variant px-6 py-3 font-headline font-bold uppercase text-sm tracking-widest hover:border-violet transition-colors" style="color:#a78bfa; text-decoration:none;">GitHub</a>
       </div>
-      <a href="https://github.com/carlosaoribeiro/TeachTrack" target="_blank"><h4 class="text-4xl font-black font-headline uppercase mb-2 hover:text-primary-container transition-colors">TeachTrack</h4></a>
-      <p class="en text-on-surface-variant font-body">Schedule management for English teachers with Firebase authentication and scalable MVVM architecture.</p>
-      <p class="pt text-on-surface-variant font-body">Gerenciamento de agenda para professores de inglês com autenticação Firebase e arquitetura MVVM escalável.</p>
     </div>
   </div>
+
+  <!-- TeachTrack -->
+  <div class="grid grid-cols-1 md:grid-cols-2 border border-surface-variant border-t-0">
+    <div class="p-10 flex flex-col justify-between bg-surface-container-low">
+      <div>
+        <span class="inline-block px-4 py-1 bg-[rgba(202,253,0,0.1)] border border-[rgba(202,253,0,0.2)] font-label uppercase text-xs tracking-widest mb-6" style="color:#cafd00;">Android · Java</span>
+        <h3 class="text-5xl font-black font-headline uppercase mb-4 leading-none">TeachTrack</h3>
+        <p class="en text-on-surface-variant font-body text-base leading-relaxed mb-8">Schedule management for English teachers with Firebase authentication and scalable MVVM architecture.</p>
+        <p class="pt text-on-surface-variant font-body text-base leading-relaxed mb-8">Gerenciamento de agenda para professores de inglês com autenticação Firebase e arquitetura MVVM escalável.</p>
+      </div>
+      <div class="flex gap-4">
+        <a href="https://github.com/carlosaoribeiro/TeachTrack" target="_blank" class="border border-surface-variant px-6 py-3 font-headline font-bold uppercase text-sm tracking-widest hover:border-primary-container transition-colors" style="color:#cafd00; text-decoration:none;">GitHub →</a>
+      </div>
+    </div>
+    <div class="bg-surface-container-high min-h-[280px] flex items-center justify-center">
+      <div class="text-center">
+        <p class="text-8xl font-black font-headline" style="color:#262626;">TT</p>
+        <p class="text-xs tracking-widest" style="color:#3a3a5c; letter-spacing:4px;">TEACHTRACK</p>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 <!-- Story -->
